@@ -1,0 +1,9 @@
+name: "Call Script in other Repo"
+
+on:
+  workflow_dispatch:
+
+jobs:
+  call_script:
+    name: "Call script in other repo"
+    uses: mcbemlogic/action_test_one/.github/workflows/main.yml@main

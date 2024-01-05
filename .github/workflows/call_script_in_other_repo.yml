@@ -7,3 +7,10 @@ jobs:
   call_script:
     name: "Call script in other repo"
     uses: mcbemlogic/actions_test_one/.github/workflows/main.yml@main
+
+  call_workflow_from_action:
+    name: "Call workflow from action"
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Call workflow"
+        uses: mcbemlogic/actions_test_one/.github/workflows/main.yml@main
